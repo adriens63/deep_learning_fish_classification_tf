@@ -1,4 +1,3 @@
-from os import write
 import tensorflow as tf
 
 try:
@@ -22,11 +21,11 @@ except ImportError:
 #********************globales********************
 SEED = 101
 AUTOTUNE = tf.data.AUTOTUNE
-BATCH_SIZE = 8
+BATCH_SIZE = 16
 data_dir = '/tf/coding/datasets/fish_recognition_gt/fish_image'
 split = .2
 logs = '../logs'
-h, w, d = 32, 32, 3
+h, w, d = 64, 64, 3
 
 
 #********************import des données********************
